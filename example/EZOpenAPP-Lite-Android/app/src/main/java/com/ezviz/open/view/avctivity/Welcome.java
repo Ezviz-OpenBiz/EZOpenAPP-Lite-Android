@@ -6,9 +6,15 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
 
 
 import com.ezviz.open.utils.EZLog;
+import com.ezviz.opensdk.auth.EZAccessTokenInternal;
+import com.ezviz.opensdk.base.EZBaseCore;
+import com.ezviz.opensdk.base.JsonUtils;
+import com.ezviz.opensdk.base.LogUtil;
+import com.ezviz.opensdk.base.SharedPreferencesUtils;
 import com.videogo.openapi.EZOpenSDK;
 
 import java.util.ArrayList;
