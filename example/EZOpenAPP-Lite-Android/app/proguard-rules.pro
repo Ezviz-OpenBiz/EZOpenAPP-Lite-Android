@@ -38,17 +38,8 @@
 -keep public class * extends android.preference.Preference
 -keep public class * extends android.os.Bundle
 
--dontwarn com.ezviz.open.model.noconfusion.**
--keep class com.ezviz.open.model.noconfusion.**{*;}
-
--dontwarn com.ezviz.player.**
--keep class com.ezviz.player.** { *;}
-
--dontwarn com.ezviz.statistics.**
--keep class com.ezviz.statistics.** { *;}
-
--dontwarn com.ezviz.stream.**
--keep class com.ezviz.stream.** { *;}
+-dontwarn com.ezviz.**
+-keep class com.ezviz.** { *;}
 
 -dontwarn com.hik.**
 -keep class com.hik.** { *;}
@@ -59,14 +50,9 @@
 -dontwarn com.videogo.**
 -keep class com.videogo.** { *;}
 
--dontwarn com.videogo.**
+-dontwarn org.MediaPlayer.PlayM4.**
 -keep class org.MediaPlayer.PlayM4.** { *;}
 
--dontwarn com.google.android.gcm.**
--keep class com.google.android.gcm.** { *;}
-
--dontwarn org.eclipse.paho.client.mqttv3.**
--keep class org.eclipse.paho.client.mqttv3.** { *;}
 
 -dontwarn okhttp3.logging.**
 -keep class okhttp3.logging.** { *;}
@@ -76,7 +62,6 @@
 
 -dontwarn javax.jmdns.**
 -keep class javax.jmdns.** { *;}
-
 
 -dontwarn com.tencent.mars.**
 -keep class com.tencent.mars.** { *;}
@@ -91,13 +76,6 @@
 -dontwarn retrofit2.**
 -keep class retrofit2.* { *;}
 
-# Realm
-#-keep class io.realm.annotations.RealmModule
-#-keep @io.realm.annotations.RealmModule class *
-#-keep class io.realm.internal.Keep
-#-keep @io.realm.internal.Keep class * { *; }
-#-dontwarn javax.**
-#-dontwarn io.realm.**
 
 -dontwarn io.realm.**
 -keep class io.realm.** { *;}
