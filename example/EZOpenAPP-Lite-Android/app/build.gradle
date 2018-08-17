@@ -5,7 +5,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.ezviz.open.haha"
+        applicationId "com.ezviz.open"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 10
