@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <com.ezviz.open.view.widget.PullRefreshRealmRecyclerView
+        android:id="@+id/playback_device_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ezviz.open.view.widget.PullRefreshRealmRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/replay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/playback_item_list_top"
+            layout="@layout/fragment_playback_device_list_item"></include>
+
+        <com.ezviz.open.view.widget.PullRefreshRecyclerView
+            android:id="@+id/playback_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.ezviz.open.view.widget.PullRefreshRecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

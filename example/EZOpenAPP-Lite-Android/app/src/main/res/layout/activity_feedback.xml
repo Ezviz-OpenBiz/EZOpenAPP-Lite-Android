@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_advise"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ezviz.open.view.widget.Topbar
+        android:id="@+id/feedback_topbar"
+        xmlns:topbar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/color_white"
+        topbar:leftIcon="@drawable/btn_return"
+        topbar:textColor="@color/topbar_title_color"
+        topbar:topBarTitle="@string/string_app_feedback_title">
+    </com.ezviz.open.view.widget.Topbar>
+
+    <EditText
+        android:id="@+id/text_feedback"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top"
+        android:background="@drawable/feedback_edittext_bg"
+        android:layout_below="@+id/feedback_topbar"
+        android:hint="@string/string_app_feedback_title"
+        android:maxLines="10"
+        android:textColor="@color/black"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/text_feedback_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_feedback"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/string_app_feedback_submit"
+        android:textColor="@color/device_delete"
+        android:textSize="16dp"/>
+
+</RelativeLayout>

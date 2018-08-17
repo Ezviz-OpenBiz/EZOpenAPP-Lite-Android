@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_auto_wifi_prepare_step_one"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezviz.open.view.avctivity.AutoWifiPrepareStepOneActivity">
+
+    <com.ezviz.open.view.widget.Topbar
+        android:id="@+id/topbar"
+        xmlns:topbar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/color_white"
+        topbar:leftIcon="@drawable/btn_return"
+        topbar:textColor="@color/topbar_title_color">
+    </com.ezviz.open.view.widget.Topbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/topTip"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tip_heard_voice"
+            android:textColor="@color/black_text"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/prepare_device" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/next_button_txt"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnIntroduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ez_btn_r1_retry_selector"
+            android:text="@string/next_button_txt"
+            android:textColor="@color/tv_my_blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

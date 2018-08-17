@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bg_m" >
+    
+    <com.ezviz.open.view.widget.RingView
+        android:id="@+id/talkback_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone" /> 
+            
+    <ImageButton
+        android:id="@+id/talkback_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close_02_normal"
+        android:onClick="onClick" />    
+        
+   <Button
+       android:id="@+id/talkback_control_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:text="@string/press_to_talk_release_to_listen"
+       android:textColor="@color/color_white"
+       android:textSize="13sp"
+       android:background="@drawable/play_talkback_selector"/>	    
+			             
+</RelativeLayout>

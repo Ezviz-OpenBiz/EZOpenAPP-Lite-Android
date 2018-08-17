@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_top_layout_backgroud_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/app_tip_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/logo"/>
+
+                    <TextView
+                        android:id="@+id/text_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="v1.0"
+                        android:textColor="@color/message_type_color"
+                        android:textSize="13.2sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_switch_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="15.4sp"
+                    android:text="@string/string_switch_account"
+                    android:textColor="@color/device_top_item_text_normal"/>
+
+            </RelativeLayout>
+            <include layout="@layout/app_list_setting"></include>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/app_tip_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:text="@string/ezviz_tip"
+            android:textColor="@color/message_type_color"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/ezviz_company"
+            android:gravity="center_horizontal"
+            android:textColor="@color/device_top_item_text_normal"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

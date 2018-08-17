@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ezviz="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="1.5dp"
+    android:layout_marginBottom="1.5dp"
+    android:orientation="vertical">
+
+    <com.ezviz.open.view.widget.ImageViewFixedRatio
+        android:id="@+id/camera_cover_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        ezviz:ratio="0.562"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/camera_item_bottom_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/camera_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="19sp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camera_title">
+
+            <TextView
+                android:id="@+id/camera_img_defense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defence_status"
+                android:textSize="12sp"
+                android:textColor="@color/btn_defence_text_selector"
+                android:background="@drawable/btn_defence_selector"
+            />
+
+            <TextView
+                android:id="@+id/camera_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/camera_img_defense"
+                android:textColor="@color/device_item_color1"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/offline_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.ezviz.open.view.widget.ImageViewFixedRatio
+            android:id="@+id/camera_cover_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:background="#66000000"
+            ezviz:ratio="0.562"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="26.4sp"
+            android:textColor="@color/color_white"
+            android:text="@string/offline"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/camera_item_top_background"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+        <ImageView
+            android:id="@+id/camera_setting"
+            android:layout_width="wrap_content"
+            android:src="@drawable/btn_set_normal"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="wrap_content"
+            android:text="@string/refreshing_camera_cover"
+            android:visibility="gone"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

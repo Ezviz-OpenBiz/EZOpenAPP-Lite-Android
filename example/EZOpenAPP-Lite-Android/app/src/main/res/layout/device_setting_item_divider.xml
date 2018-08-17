@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/message_push_layout"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/main_back">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

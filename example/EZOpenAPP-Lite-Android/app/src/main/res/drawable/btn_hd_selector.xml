@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+><!-- 其中rectagle表示矩形，oval表示椭圆，line表示水平直线，ring表示环形 -->
+    <!-- 节点属性介绍如下 -->
+
+    <corners android:radius="2dp">
+    </corners>
+
+    <!-- 描边 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/color_white"
+        android:dashWidth="1dp"
+        android:dashGap="2dp"/>
+</shape>

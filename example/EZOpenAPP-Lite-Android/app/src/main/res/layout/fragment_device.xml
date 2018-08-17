@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/device_tab_layout"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="2dp"
+            app:tabMaxWidth="180dp"
+            app:tabTextColor="@color/device_top_item_text_normal"
+            app:tabIndicatorColor="@color/main_item_text_select"
+            app:tabSelectedTextColor="@color/main_item_text_select"/>
+
+        <ImageView
+            android:id="@+id/img_add_device"
+            android:layout_width="wrap_content"
+            android:src="@drawable/btn_add_highlight"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/device_tab_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    />
+</LinearLayout>

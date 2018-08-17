@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.ezviz.open.haha"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 10
+        versionName "2.0.0"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+        jumboMode = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    google()
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:25.2.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'io.reactivex:rxjava:1.1.5'
+    implementation 'io.reactivex:rxandroid:1.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    implementation 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:support-v4:25.2.0'
+    implementation 'com.android.support:design:25.2.0'
+    implementation 'com.android.support:cardview-v7:25.2.0'
+    implementation 'com.android.support:recyclerview-v7:25.2.0'
+    implementation 'com.hikvision.ezviz:ezviz-sdk:5.0.0'
+//   implementation 'com.facebook.stetho:stetho:1.5.0'
+
+}

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="Topbar">
+        <attr name="textColor" format="reference|color" />
+        <attr name="hideLeft" format="boolean" />
+        <attr name="hideRight" format="boolean" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="topBarTitle" format="string" />
+        <attr name="topBarLeft" format="string" />
+        <attr name="topBarRight" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="IRecyclerView">
+        <attr name="refreshHeaderLayout" format="reference" />
+        <attr name="loadMoreFooterLayout" format="reference" />
+        <attr name="refreshEnabled" format="boolean" />
+        <attr name="loadMoreEnabled" format="boolean" />
+        <attr name="refreshFinalMoveOffset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ImageViewFixedRatio">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+</resources>

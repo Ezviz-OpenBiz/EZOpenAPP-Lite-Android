@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_back"
+                android:orientation="vertical" >
+
+
+    <com.ezviz.open.view.widget.Topbar
+        android:id="@+id/topbar"
+        xmlns:topbar="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/color_white"
+        topbar:leftIcon="@drawable/btn_return"
+        topbar:textColor="@color/topbar_title_color">
+    </com.ezviz.open.view.widget.Topbar>
+
+    <LinearLayout
+        android:id="@+id/cameraListLy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="175dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/results_pic_bg" >
+
+            <ImageView
+                android:id="@+id/deviceIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/results_pic_default" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/scan_network_unavailible"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/scan_connet_network"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/unbind_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_white_selector"
+            android:gravity="center"
+            android:text="@string/unbind_to_bind"
+            android:textColor="#1b9ee2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activateHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17.3dp"
+            android:background="@drawable/btn_white_selector"
+            android:gravity="center"
+            android:text="@string/promptUserToActivate"
+            android:textColor="#1b9ee2"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="@string/scan_add"
+            android:textColor="@color/color_white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/connectTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/please_connect_the_power"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/errorPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_shade"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/failedMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_result_text"
+            android:textColor="@color/black_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/myRetry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_selector"
+            android:onClick="onClick"
+            android:text="@string/refresh"
+            android:textColor="@color/color_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/queryingCameraRyt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!-- android:background="@drawable/input_shade" -->
+
+        <ImageView
+            android:id="@+id/searchAnim"
+            android:layout_width="150dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="35dp"
+            android:background="@anim/device_search_bg" />
+
+        <TextView
+            android:id="@+id/querying_camera_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/querying_camera_text"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

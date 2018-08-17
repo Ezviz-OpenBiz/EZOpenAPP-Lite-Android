@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">萤石云 Lite</string>
+
+    <string name="title_activity_welcome">萤石云 Lite</string>
+
+    <!-- topbar -->
+    <string name="my_device_source">"我的资源"</string>
+    <string name="my_message">"消息"</string>
+
+    <!-- main bottom item activity -->
+    <string name="string_main_bottom_device">"资源"</string>
+    <string name="string_main_bottom_message">"消息"</string>
+    <string name="string_main_bottom_app">"我的"</string>
+
+    <!-- device top item activity -->
+    <string name="string_device_top_cameralist">"预览"</string>
+    <string name="string_device_top_replaylist">"回放"</string>
+    <string name="string_device_top_devicelist">"设备"</string>
+
+
+    <string name="today">"今天"</string>
+    <string name="just_now">"刚刚"</string>
+    <string name="before_minute">"%d分钟前"</string>
+    <string name="before_hours">"%d小时前"</string>
+    <string name="yesterday">"昨天"</string>
+    <string name="custum_date">"%1$d年%2$d月%3$d日"</string>
+    <string name="custum_date_no_year">"%1$d月%2$d日"</string>
+
+
+    <string name="loading_more">"正在加载&#8230;"</string>
+    <string name="loading_logout">"正在注销&#8230;"</string>
+
+    <string name="string_switch_account">"切换账号"</string>
+    <string name="exit">确定退出</string>
+    <string name="exit_tip">退出后将需要重新登录，确定要退出?</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="version">"V%1$s (SDK %2$s)"</string>
+
+    <string name="string_hd">"高清"</string>
+    <string name="string_smooth">"流畅"</string>
+    <string name="string_balanced">"均衡"</string>
+    <string name="string_set_quality_fail">"设置清晰度失败"</string>
+
+    <string name="offline">"离线"</string>
+
+    <string name="settiing_modify_password">"修改密码"</string>
+    <string name="settiing_message_push">"消息推送"</string>
+    <string name="settiing_commom_problem">"常见问题"</string>
+    <string name="ezviz_tip">"Lite版本基于\"萤石云开放平台\"的SDK\r\n完整体验，请使用\"萤石云视频\""</string>
+    <string name="ezviz_company">"© 2017杭州萤石网络有限公司"</string>
+
+    <!-- camera setting list -->
+    <string name="modify_camera_name">"修改名称"</string>
+    <string name="modify_camera_cover">"刷新封面"</string>
+    <string name="off_defence">"关闭活动检测提醒"</string>
+    <string name="on_defence">"开启活动检测提醒"</string>
+    <string name="camera_more_setting">"更多设置"</string>
+
+    <string name="refreshing_camera_cover">"正在刷新封面&#8230;"</string>
+    <string name="device_type">"型号：%1$s"</string>
+    <string name="device_serial">"序列号：%1$s"</string>
+    <string name="device_use_time">"添加于：%1$s"</string>
+
+
+    <!-- 设备设置 -->
+    <string name="device_setting">"详细设置"</string>
+    <string name="device_setting_name">"名称"</string>
+    <string name="device_setting_defence">"活动检测提醒"</string>
+    <string name="device_setting_voice_rompt">"设备语音提示"</string>
+    <string name="device_setting_picture_video_entrcy">"视频/图片加密"</string>
+    <string name="device_setting_sdcard">"TF卡"</string>
+    <string name="device_setting_cloud">"云存储"</string>
+    <string name="device_setting_firmware">"固件版本"</string>
+    <string name="device_setting_del">"删除设备"</string>
+    <string name="string_delete_device_title">删除</string>
+    <string name="string_delete_device_tip">确定删除该设备？</string>
+
+    <string name="device_name">"设备名称"</string>
+    <string name="camera_name">"通道名称"</string>
+    <string name="save">"保存"</string>
+    <string name="device_setting_firmware_newest">"已最新"</string>
+
+    <string name="device_setting_sdcard_status_using">"使用中"</string>
+    <string name="device_setting_sdcard_status_not_format">"未初始化"</string>
+    <string name="device_setting_sdcard_status_no">"无"</string>
+
+    <string name="device_setting_cloud_status_using">"使用中"</string>
+    <string name="device_setting_cloud_status_expire">"已过期"</string>
+    <string name="device_setting_cloud_status_not_activating">"未激活"</string>
+    <string name="device_setting_cloud_status_not_open">"未开通云存储"</string>
+    <string name="device_setting_cloud_status_nosupport">"设备不支持云存储"</string>
+
+    <string name="start_voice_talk">正在发起对讲</string>
+    <string name="press_to_talk_release_to_listen">按住说话\n松开收听</string>
+    <string name="realplay_play_talkback_fail">对讲开启失败</string>
+    <string name="realplay_play_talkback_fail_ison">同一时间只能与一台设备进行对讲哦，请停止其他对讲后再尝试</string>
+    <string name="realplay_play_talkback_fail_privacy">隐私保护模式下无法对讲</string>
+    <string name="realplay_fail_device_not_exist">设备不在线</string>
+    <string name="realplay_play_talkback_request_timeout">请求超时，对讲已关闭</string>
+    <string name="realplay_play_talkback_network_exception">网络异常，对讲已关闭</string>
+    <string name="talking">对讲中…</string>
+    <string name="string_rate">"当前：%1$s"</string>
+    <string name="string_flow">"合计：%1$s"</string>
+
+    <string name="remoteplayback_record_fail">录像失败</string>
+    <string name="no_result_playback_file">文件查询失败</string>
+    <string name="remoteplayback_record_fail_for_memory">录像中断,存储空间已满</string>
+    <string name="remoteplayback_SDCard_disable_use">存储卡不可用</string>
+    <string name="device_name_length_limit">"50个字以内"</string>
+    <string name="remoteplayback_over_link">设备连接数过大，停止其他连接后再试试吧</string>
+    <string name="realplay_fail_connect_device">播放失败，连接设备异常</string>
+    <string name="realplay_play_fail">视频播放失败</string>
+    <string name="vrifycode_dialog_tip">
+        "您的视频已加密，请输入密码进行查看，初始密码为机身标签上的验证码，如果没有验证码，请输入ABCDEF（密码区分大小写）"
+    </string>
+    <string name="vrifycode_dialog_title">"请输入设备验证码"</string>
+    <string name="string_timeout">超时，请重试</string>
+    <string name="input_device_verify_code">请输入设备验证码</string>
+    <string name="string_search_device">设备搜索</string>
+    <string name="string_add_device">"添加设备"</string>
+    <string name="string_add_device_code">"二维码"</string>
+    <string name="string_add_device_serial">"序列号"</string>
+    <string name="string_add_device_code_tip">"将机身/说明书二维码放入框内即可自动扫描"</string>
+    <string name="title_activity_connect_device_wifi">连接到设备Wi-Fi</string>
+    <string name="connect_device_wifi_tip3">等待与设备连接成功，自动进入下一步操作</string>
+    <string name="string_next">"下一步"</string>
+    <string name="ez_serial_add_hint">设备机身上的9位序列号</string>
+    <string name="string_title_wifi_select">Wi-Fi信息填写</string>
+    <string name="string_ok">确认</string>
+    <string name="please_connect_the_power">添加时，请确保你的设备已连接好电源</string>
+    <string name="no_result_text">没有查询到结果</string>
+    <string name="querying_camera_text">正在查询设备信息，请稍等...</string>
+    <string name="refresh">重试</string>
+    <string name="scan_network_unavailible">尚未连接好网络</string>
+    <string name="scan_connet_network">连接网络</string>
+    <string name="unbind_to_bind">解绑添加</string>
+    <string name="promptUserToActivate">非萤石设备请先激活设备 &gt;&gt;</string>
+    <string name="scan_add">添加</string>
+    <string name="serial_number_is_null">序列号不能为空</string>
+    <string name="serial_add_hint">请输入设备9位序列号</string>
+    <string name="probe_not_support_tip">不支持序列号添加探测器哦～</string>
+    <string name="serial_number_put_the_right_no">请输入正确的序列号</string>
+    <string name="serial_number_error">序列号错误</string>
+    <string name="query_camera_fail_network_exception">查询失败，网络不给力</string>
+    <string name="scan_device_search">设备搜索</string>
+    <string name="seek_camera_fail_device_not_support_shipin7">平台不支持型号添加</string>
+    <string name="query_camera_fail_server_exception">查询失败，服务器太忙了</string>
+    <string name="check_feature_code_fail">验证硬件特征码失败</string>
+    <string name="query_camera_fail_network_exception_or_server_exception">查询失败，网络不给力</string>
+    <string name="scan_device_add_by_others">此设备已被别人添加</string>
+    <string name="query_camera_fail_repeat_error">操作失败，设备已被添加</string>
+    <string name="auto_wifi_device_you_added_already">设备已添加</string>
+    <string name="query_camera_fail_not_exit">设备未注册，请检查您的设备网络</string>
+    <string name="query_camera_fail">查询失败</string>
+    <string name="result_txt">结果</string>
+    <string name="add_camera_fail_network_exception">添加失败，请检查您的网络</string>
+    <string name="add_camera_fail_server_exception">操作失败</string>
+    <string name="device_so_timeout">设备响应超时，请检查您的网络</string>
+    <string name="camera_not_online">设备不在线</string>
+    <string name="added_camera_success_txt">添加成功</string>
+    <string name="add_camera_success_tip">你可以在电脑上登录i.ys7.com，在“我的店铺”里开启Wi-Fi营销了</string>
+    <string name="retry">重试</string>
+    <string name="ez_auto_wifi_line_connect">使用有线连接</string>
+    <string name="goto_help_error_page">去帮助看看</string>
+    <string name="wifi_connection_finish_need_refresh">设备状态更新稍有延迟，需要等待5~10s的时间，请在“我的”界面手动刷新</string>
+    <string name="complete_txt">完成</string>
+    <string name="cloud_free">开通免费云存储</string>
+    <string name="more">了解更多</string>
+    <string name="auto_wifi_line_msg">请将您的设备和路由器用网线连接好</string>
+    <string name="auto_wifi_line_connected">我已连接好</string>
+    <string name="auto_wifi_tip_connecting_wifi_ok">已配置好Wi-Fi网络</string>
+    <string name="auto_wifi_tip_connecting_wifi">连接Wi-Fi网络</string>
+    <string name="string_device_network_mode">设备网络配置方式</string>
+    <string name="string_wired_connection">有线连接模式</string>
+    <string name="string_ap_connection">AP配网模式</string>
+    <string name="string_smart_connection">普通Smart配网模式</string>
+    <string name="string_sound_wave_connection">声波配网模式</string>
+    <string name="string_smart_and_sound_wave_connection">声波+普通配网模式</string>
+
+    <string name="auto_wifi_connecting_msg1">请将手机靠近设备，添加过程大约需要等待1分钟，请稍候…</string>
+    <string name="auto_wifi_tip_connecting_server_ing">快了快了，正在注册到萤石平台</string>
+    <string name="auto_wifi_tip_connecting_server">注册萤石平台</string>
+    <string name="auto_wifi_tip_binding_account">绑定到你的账号</string>
+    <string name="auto_wifi_tip_connecting_wifi_ing">萤小石正在努力配置Wi-Fi网络</string>
+    <string name="auto_wifi_tip_connecting_server_ok">已注册到萤石平台</string>
+    <string name="auto_wifi_tip_binding_account_ing">绑到你的账号下就大功告成了哦</string>
+    <string name="save_encrypt_password_fail_network_exception">设置失败，请检查您的网络</string>
+    <string name="start_cloud">正在开启云存储，请稍候…</string>
+    <string name="auto_wifi_title_add_device2">第三步，添加设备</string>
+    <string name="auto_wifi_dialog_connecting_msg">添加过程稍稍有点漫长，耐心等一会儿哦~</string>
+    <string name="update_exit">退出</string>
+    <string name="wait">等待</string>
+    <string name="ez_auto_wifi_connecting_failed">配置Wi-Fi失败，请重试或返回检查Wi-Fi密码是否正确</string>
+    <string name="auto_wifi_register_failed">设备未连接到萤石云，请检查设备所在网络是否能正常上网后重试</string>
+    <string name="auto_wifi_add_device_failed">添加失败，请重试</string>
+    <string name="device_error">设备异常</string>
+    <string name="auto_wifi_add_device_failed2">添加失败</string>
+    <string name="auto_wifi_device_added_already">该设备已被添加</string>
+    <string name="add_device_failed_not_online">Wi-Fi配置成功、绑定账号失败，请重试</string>
+    <string name="verify_code_error">验证码错误，请核对</string>
+    <string name="auto_wifi_device_not_exist">绑定账号失败，设备不存在</string>
+    <string name="auto_wifi_device_added_by_others">设备已被其他人添加</string>
+    <string name="ez_add_device_failed_not_online">设备不在线</string>
+    <string name="enable_cloud_fause">云存储开通失败</string>
+    <string name="enable_cloud_fause_retry">开通失败，请重试。你也可以随时在"设置"—"存储状态"中开通云存储</string>
+    <string name="not_now">暂不开通</string>
+    <string name="tip_heard_voice">请将设备插上电后等待大约30秒，直到设备启动完成</string>
+    <string name="next_button_txt">下一步</string>
+    <string name="autowifi_heard_voice">设备已启动好，且是第一次配置网络</string>
+    <string name="autowifi_not_heard_voice">这台设备以前配过网络</string>
+    <string name="auto_wifi_step_one_title">第一步，准备好设备</string>
+    <string name="device_reset_ok">我已重启好</string>
+    <string name="device_reset_title">重启设备</string>
+    <string name="device_reset_tip">长按设备上的reset键10秒后松开，并等待大约30秒直到设备启动完成</string>
+    <string name="device_unsupport_5g_wifi">如果你使用的是双频路由器，请不要让摄像机连接5G频段的Wi-Fi</string>
+    <string name="auto_wifi_cer_config_title1">网络连接(1/2)</string>
+    <string name="auto_wifi_dialog_title_wifi_required">需要将手机连接到Wi-Fi</string>
+    <string name="please_open_wifi_network">请到“设置”-“Wi-Fi”功能中开启Wi-Fi并连接到网络</string>
+    <string name="auto_wifi_dialog_btn_wifi">连接Wi-Fi</string>
+    <string name="unknow_ssid">&lt;unknown ssid&gt;</string>
+    <string name="auto_wifi_cer_config_title2">第二步，连接Wi-Fi</string>
+    <string name="auto_wifi_net">网络</string>
+    <string name="auto_wifi_ssid">SSID</string>
+    <string name="login_password_tv_txt">密码</string>
+
+    <string name="string_app_upgrade">检测到新版本</string>
+    <string name="string_app_upgrade_download">确定下载</string>
+
+    <string name="string_app_feedback_title">我要吐槽</string>
+    <string name="string_app_feedback_submit">提交</string>
+    <string name="string_app_feedback_submit_tip">提交内容不能为空</string>
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+    <string name="title_activity_play">PlayActivity</string>
+
+
+    <string name="alarm_type_infrared">红外感应</string>
+    <string name="alarm_type_water">水警</string>
+    <string name="thermal_imaging_fire">火警</string>
+    <string name="alarm_type_motion_detection">移动侦测</string>
+    <string name="alarm_type_io">IO报警</string>
+    <string name="alarm_type_other">其他报警</string>
+
+    <string name="alarm_type_remotecontrol">紧急遥控按钮事件</string>
+
+    <string name="alarm_type_door">门磁报警</string>
+    <string name="alarm_type_smoke">烟感报警</string>
+    <string name="alarm_type_gas">可燃气体报警</string>
+
+    <string name="alarm_type_urgent_button">紧急按钮报警</string>
+    <string name="alarm_type_person_alarm">人体感应报警</string>
+
+    <string name="alarm_type_baby_cry">婴儿啼哭报警</string>
+    <string name="alarm_type_unknown">未知类型报警</string>
+    <string name="alarm_type_curtain">幕帘报警</string>
+    <string name="alarm_type_io1">IO-1报警</string>
+    <string name="alarm_type_io2">IO-2报警</string>
+    <string name="alarm_type_io3">IO-3报警</string>
+    <string name="alarm_type_io4">IO-4报警</string>
+    <string name="alarm_type_io5">IO-5报警</string>
+    <string name="alarm_type_io6">IO-6报警</string>
+    <string name="alarm_type_io7">IO-7报警</string>
+    <string name="alarm_type_io8">IO-8报警</string>
+    <string name="alarm_type_io9">IO-9报警</string>
+    <string name="alarm_type_io10">IO-10报警</string>
+    <string name="alarm_type_io11">IO-11报警</string>
+    <string name="alarm_type_io12">IO-12报警</string>
+    <string name="alarm_type_io13">IO-13报警</string>
+    <string name="alarm_type_io14">IO-14报警</string>
+    <string name="alarm_type_io15">IO-15报警</string>
+    <string name="alarm_type_io16">IO-16报警</string>
+    <string name="alarm_type_shelter">遮挡报警</string>
+    <string name="alarm_type_scene_change_detection">场景变更侦测</string>
+    <string name="alarm_type_line_detection">越界侦测</string>
+    <string name="alarm_type_field_detection">区域入侵</string>
+    <string name="alarm_type_face_detection">人脸检测事件</string>
+    <string name="alarm_type_defocus">虚焦侦测</string>
+    <string name="alarm_type_audio_exception">音频异常侦测</string>
+    <string name="alarm_type_left_detection">物品遗留侦测</string>
+    <string name="alarm_type_take_detection">物品拿取侦测</string>
+    <string name="alarm_type_parking_detection">非法停车侦测</string>
+    <string name="alarm_type_high_density_detection">人员聚集侦测</string>
+    <string name="alarm_type_loiter_detection">徘徊检测侦测</string>
+    <string name="alarm_type_run_detection">快速移动侦测</string>
+    <string name="alarm_type_enter_area_detection">进入区域侦测</string>
+    <string name="alarm_type_exit_area_detection">离开区域侦测</string>
+    <string name="alarm_type_video_loss">视频丢失</string>
+    <string name="alarm_type_ipc_unlinked">摄像机失去关联</string>
+    <string name="alarm_type_move_magnetometer">单体门磁报警</string>
+    <string name="alarm_type_hdd">硬盘异常</string>
+    <string name="alarm_type_temp_high">温度过高报警</string>
+    <string name="alarm_type_temp_low">温度过低报警</string>
+    <string name="alarm_type_hum_high">湿度过高报警</string>
+    <string name="alarm_type_hum_low">湿度过低报警</string>
+    <string name="alarm_mag_gim">磁干扰报警</string>
+    <string name="alarm_under_voltage">电池电量低报警</string>
+    <string name="alarm_intrusion">闯入报警</string>
+    <string name="alarm_baby_motion">婴儿大动作报警</string>
+    <string name="alarm_power_change">电源切换报警</string>
+
+    <string name="white_list_face">陌生人报警</string>
+    <string name="title_activity_ez_uiplayer">EzUIPlayerActivity</string>
+    <string name="defence_status">活动检测</string>
+
+</resources>

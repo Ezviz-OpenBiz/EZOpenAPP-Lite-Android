@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+        <TextView
+            android:id="@+id/video_quality_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_video_level_selector"
+            android:text="@string/string_smooth"
+            android:textColor="@color/color_white"
+            android:textSize="15.4sp"/>
+</RelativeLayout>

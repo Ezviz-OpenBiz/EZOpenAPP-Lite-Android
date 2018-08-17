@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="dkgray">#80808FF0</color>
+    <color name="yello">#F8F8FF00</color>
+    <color name="darkgray">#FF938192</color>
+    <color name="lightgreen">#7cd12e</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="gray">#ff888888</color>
+    <color name="green">#ff00ff00</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="red">#ffff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#ffffff00</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="main_back">#FFF5F5F5</color>
+
+    <color name="main_item_text_select">#FFF37F4C</color>
+    <color name="main_item_text_normal">#FF686880</color>
+    <color name="device_top_item_text_normal">#FF646464</color>
+
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="topbar_title_color">#FF323232</color>
+    <color name="message_type_color">#FF969696</color>
+    <color name="app_top_layout_backgroud_color">#FFF5F5F5</color>
+    <color name="list_divider">#FFE5E5E5</color>
+
+    <color name="recycle_item_divider">#FFE6E6E6</color>
+
+    <color name="device_item_color1">#FFD2D2D2</color>
+    <color name="device_item_color2">#FF5D677C</color>
+    <color name="device_item_color3">#FF919FBB</color>
+
+    <color name="play_activity_color1">#FFC8C8C8</color>
+    <color name="orange">#df2d10</color>
+
+    <!-- 报警消息字体   -->
+    <color name="alarm_type_infrared_color">#FFE56180</color>
+    <color name="alarm_type_water_color">#FF7CB5F6</color>
+    <color name="thermal_imaging_fire_color">#FFE56180</color>
+    <color name="alarm_type_motion_detection_color">#FF19AC19</color>
+    <color name="alarm_type_other_color">#FF697389</color>
+
+    <color name="device_delete">#FFFE4748</color>
+
+    <!-- scan color -->
+    <color name="viewfinder_frame">#929292</color>
+    <color name="viewfinder_laser">#fe5600</color>
+    <color name="viewfinder_mask">#000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="line_color">#bebdbc</color>
+    <color name="black_text">#333333</color>
+    <color name="scan_yellow">#FFE56B19</color>
+
+    <color name="search_serail_bg">#FF39404C</color>
+    <color name="add_title_text_color">#FF666666</color>
+    <color name="help_link">#527ddb</color>
+
+    <!-- wifi一键配置 -->
+    <color name="auto_wifi_red">#fe4343</color>
+    <color name="auto_wifi_blue">#40a2ee</color>
+    <color name="auto_tip_text">#888888</color>
+    <color name="auto_blue_text">#2554bd</color>
+    <color name="tv_my_blue">#1b9ee2</color>
+
+    <color name="auto_wifi_tip_red">#FF4000</color>
+
+    <!-- switch 配置 -->
+    <color name="color_switch_activited">#33CC8F</color>
+    <color name="color_switch_normal">#ff888888</color>
+    <color name="color_switch_bg">#7c888888</color>
+</resources>

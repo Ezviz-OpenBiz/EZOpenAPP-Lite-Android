@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/wifi_config_bg"
+    android:orientation="vertical"
+    >
+
+    <com.ezviz.open.view.widget.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftIcon="@drawable/common_title_back"
+        app:topBarTitle="@string/string_title_wifi_select"
+        android:background="@color/color_white"
+        >
+    </com.ezviz.open.view.widget.Topbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/device_unsupport_5g_wifi"
+            android:textColor="@color/black_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_wifi_net"
+                android:textColor="@color/black_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:hint="@string/auto_wifi_ssid"
+                android:singleLine="true"
+                android:textColor="@color/black_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputlayout_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password_tv_txt"
+                android:textColor="@color/black_text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLength="64"
+                android:singleLine="true"
+                android:textColor="@color/black_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:layout_marginTop="20dp"
+            android:text="@string/string_ok"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"
+><!-- 其中rectagle表示矩形，oval表示椭圆，line表示水平直线，ring表示环形 -->
+    <!-- 节点属性介绍如下 -->
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="9dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp"
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"/><!-- 设置圆角半径 -->
+
+
+    <!-- 间隔 -->
+    <padding
+        android:left="10dp"
+        android:top="5dp"
+        android:right="10dp"
+        android:bottom="5dp"/><!-- 各方向的间隔 -->
+
+
+    <!-- 描边 -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/color_white"/>
+
+</shape>

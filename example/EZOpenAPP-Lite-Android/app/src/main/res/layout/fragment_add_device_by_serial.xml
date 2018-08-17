@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/main_back">
+
+
+    <ImageView
+        android:id="@+id/img_serial_tip"
+        android:layout_width="240dp"
+        android:paddingBottom="30dp"
+        android:src="@drawable/device_serial"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="180dp"/>
+
+        <EditText
+            android:id="@+id/seriesNumberEt"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/img_serial_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/color_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/ez_serial_add_hint"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/topbar_title_color"
+            android:textColorHint="@color/gray"
+            android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/seriesNumberEt"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/string_next"
+        android:textColor="@color/color_white"
+        android:background="@drawable/button_normal"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
