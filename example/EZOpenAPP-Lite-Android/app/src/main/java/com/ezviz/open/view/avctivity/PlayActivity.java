@@ -718,6 +718,7 @@ public class PlayActivity extends RootActivity implements SurfaceHolder.Callback
         if (!TextUtils.isEmpty(mVerifyCode)) {
             mEZPlayer.setPlayVerifyCode(mVerifyCode);
         }
+        mStatus = STATUS_START;
         startRealPlayUI();
         mEZPlayer.startRealPlay();
     }
@@ -738,7 +739,6 @@ public class PlayActivity extends RootActivity implements SurfaceHolder.Callback
         if (mPlayPresenter.getOpenDeviceInfo() == null || mPlayPresenter.getOpenCameraInfo() == null) {
             return;
         }
-        mStatus = STATUS_START;
         if (mPlayPresenter.getOpenDeviceInfo().getIsEncrypt() == 0) {
             realStartPlay(null);
         } else {

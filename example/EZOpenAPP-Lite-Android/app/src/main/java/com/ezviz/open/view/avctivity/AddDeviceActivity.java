@@ -2,56 +2,35 @@ package com.ezviz.open.view.avctivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.ezviz.open.view.fragment.CaptureFragment;
-import com.ezviz.open.view.widget.Topbar;
-
 import com.ezviz.open.R;
-/**
- * Description:添加设备
- * Created by dingwei3
- *
- * @date : 2016/12/21
- */
-public class AddDeviceActivity extends RootActivity implements View.OnClickListener {
+import com.ezviz.open.view.widget.Topbar;
+import com.videogo.exception.BaseException;
+import com.videogo.openapi.EZOpenSDK;
 
-    /**
-     * 扫描二维码添加
-     */
-    private static final int TYPE_CODE = 1;
-    /**
-     * 手动输入序列号添加
-     */
-    private static final int TYPE_SERIAL = 2;
-    private int mType = 0;
-    private Topbar mTopbar;
-    private ImageView mCodeImg;
-    private ImageView mSerialImg;
-    private TextView mCodeTextView;
-    private TextView mSerialTextView;
-    private TextView mCodeTipTextView;
-    private LinearLayout mBottomBar;
+
+public class AddDeviceActivity extends RootActivity {
+    private static final String TAG = "DeviceStartAddActivity";
+    private Topbar mTopBar;
+    private String mDeviceSerial;
+    private String mVerifyCode;
+    private TextView mDeviceSerialTv;
+    private TextView mAddTv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_capture);
-        initView();
-    }
-
-    private void initView() {
-        mTopbar = (Topbar) findViewById(R.id.capture_topbar);
-        mTopbar.setTitle(R.string.string_add_device);
-        mCodeImg = (ImageView) findViewById(R.id.img_code);
-        mSerialImg = (ImageView) findViewById(R.id.img_serial);
-        mCodeTextView = (TextView) findViewById(R.id.text_code);
-        mSerialTextView = (TextView) findViewById(R.id.text_serial);
-        mCodeTipTextView = (TextView) findViewById(R.id.code_tip_textview);
-        mBottomBar = (LinearLayout) findViewById(R.id.bottom_bar_layout);
-        mTopbar.setOnTopbarClickListener(new Topbar.OnTopbarClickListener() {
+        setContentView(R.layout.activity_add_device);
+        mDeviceSerial = getIntent().getStringExtra("SerialNo");
+        mVerifyCode = getIntent().getStringExtra("very_code");
+        mDeviceSerialTv = (TextView) findViewById(R.id.string_deviceid);
+        mAddTv = (TextView) findViewById(R.id.add_device);
+        mDeviceSerialTv.setText(mDeviceSerial);
+        mTopBar = (Topbar) findViewById(R.id.topbar);
+        mTopBar.setOnTopbarClickListener(new Topbar.OnTopbarClickListener() {
             @Override
             public void onLeftButtonClicked() {
                 finish();
@@ -62,23 +41,39 @@ public class AddDeviceActivity extends RootActivity implements View.OnClickListe
 
             }
         });
-        mSerialImg.setOnClickListener(this);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_layout, new CaptureFragment()).commitAllowingStateLoss();
-        mSerialImg.setImageResource(R.drawable.number_normal);
-        mCodeImg.setImageResource(R.drawable.code_selected);
-        mCodeTextView.setSelected(true);
-        mSerialTextView.setSelected(false);
-        mCodeTipTextView.setVisibility(View.VISIBLE);
-        mBottomBar.setBackgroundColor(android.graphics.Color.parseColor("#00ffffff"));
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (view == mSerialImg) {
-            Bundle bundle = new Bundle();
-            Intent intent = new Intent(this, SearchDeviceActivity.class);
-            intent.putExtras(bundle);
-            startActivity(intent);
-        }
+        mAddTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showLoadDialog();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            EZOpenSDK.addDevice(mDeviceSerial, mVerifyCode);
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    dismissLoadDialog();
+                                    Intent intent = new Intent(AddDeviceActivity.this, MainActivity.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            });
+                        } catch (BaseException e) {
+                            e.printStackTrace();
+                            Log.d(TAG, "Request failed = " + e.getErrorCode());
+                            showToast("Request failed = " + e.getErrorCode());
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    dismissLoadDialog();
+                                }
+                            });
+                        }
+                    }
+                }).start();
+            }
+        });
     }
 }

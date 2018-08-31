@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 
 import com.ezviz.open.presenter.DevicePresenter;
-import com.ezviz.open.view.avctivity.AddDeviceActivity;
+import com.ezviz.open.view.avctivity.DeviceStartAddActivity;
 import com.ezviz.open.R;
 /**
  * Description:设备资源相关fragment
@@ -48,7 +48,7 @@ public class DeviceFragment extends BaseLazyFragment{
         mAddDeviceImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, AddDeviceActivity.class);
+                Intent intent = new Intent(mContext, DeviceStartAddActivity.class);
                 mContext.startActivity(intent);
             }
         });

@@ -106,7 +106,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
         <activity
-            android:name="com.ezviz.open.view.avctivity.AddDeviceActivity"
+            android:name="com.ezviz.open.view.avctivity.DeviceStartAddActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_welcome"
@@ -120,7 +120,12 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false">
         </activity>
-
+        <activity android:name=".view.avctivity.AddDeviceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
 
     </application>
 

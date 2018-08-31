@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.ezviz.open.common.EZOpenConstant;
 import com.ezviz.open.view.widget.Topbar;
-import com.videogo.exception.BaseException;
 import com.videogo.openapi.EZOpenSDK;
 import com.videogo.openapi.bean.EZProbeDeviceInfo;
 

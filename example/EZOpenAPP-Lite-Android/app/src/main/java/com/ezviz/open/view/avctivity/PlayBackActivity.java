@@ -672,6 +672,7 @@ public class PlayBackActivity extends RootActivity implements SurfaceHolder.Call
         if (!TextUtils.isEmpty(mVerifyCode)) {
             mEZPlayer.setPlayVerifyCode(mVerifyCode);
         }
+        mStatus = STATUS_START;
         startRealPlayUI();
         if (mEZCloudRecordFile != null) {
             mEZPlayer.startPlayback(mEZCloudRecordFile);
@@ -701,7 +702,7 @@ public class PlayBackActivity extends RootActivity implements SurfaceHolder.Call
         if (!EZOpenUtils.isNetworkAvailable(this)) {
             return;
         }
-        mStatus = STATUS_START;
+
         if (mEZAlarmInfo.getIsEncrypt() == 0) {
             realStartPlay(null);
         } else {
